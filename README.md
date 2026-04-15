@@ -103,24 +103,24 @@ You probably already have ways of documenting your code (Git / markdown), but in
 
 ## Metadata
 
-The assemblies were generated from long read PacBio HiFi and HiC data for 14 breadfruit samples. Breadfruit has recently diversified into different ploidy levels including 3N and 4N. This elevation in ploidy was recent and results from self-duplication (autopolyploid), so we don't expect much variation to have accumulated between the different haplotypes of the 3N/4N samples yet. Metadata available as a tsv [here](/metadata.tsv). 
+The assemblies were generated from long read PacBio HiFi and HiC data for 14 breadfruit samples. Breadfruit has recently diversified into different ploidy levels including 3N and 4N. This elevation in ploidy was recent and results from self-duplication (autopolyploid), so we don't expect much variation to have accumulated between the different haplotypes of the 3N/4N samples yet. Metadata available as a tsv [here](/metadata.tsv), including paths to the raw HiFi data. 
 
-| Accession | Cultivar      | Species                 | Ploidy          | Seeds    | Bases (Gb) | Read Length (Kb) |
-| --------- | ------------- | ----------------------- | --------------- | -------- | ---------- | ---------------- |
-| HART001   | Maafala       | Artocarpus altilis      | 2N              | Seedless | 59.32      | 11206.3          |
-| HART050   | Kukumu tasi   | Artocarpus altilis      | 2N              | Seeded   | 38.96      | 17753.1          |
-| HART069   | Ulu Fiti      | Artocarpus altilis      | 2N              | Seeded   | 72.95      | 12674.4          |
-| HART030   | Huero         | Artocarpus altilis      | 3N              | Seedless | 96.64      | 18338.2          |
-| HART032   | Hamoa         | Artocarpus altilis      | 3N              | Seedless | 88.25      | 15382.2          |
-| HART033   | Patara        | Artocarpus altilis      | 3N              | Seedless | 139.76     | 14764.85         |
-| HART038   | Lemai         | Artocarpus altilis      | 3N              | Seedless | 42.63      | 18956.6          |
-| HART053   | Nahnmwal      | Artocarpus altilis      | 3N              | Seedless | 78.23      | 15006            |
-| ZZ3       | Ulu hamoa     | Artocarpus sp.          | hybrid 2N       | Seeded   | 29.22      | 18949.4          |
-| ZZ7       | Ulu afa elise | Artocarpus sp.          | hybrid 2N       | Seeded   | 28.6       | 20738.2          |
-| ZZ9       | Ulu afa       | Artocarpus sp.          | hybrid 2N       | Seeded   | 30.02      | 19115.8          |
-| HART046   | Midolab       | Artocarpus sp.          | hybrid 3N       | Seedless | 111.19     | 14132.65         |
-| HART049   | Meinpohnsakar | Artocarpus sp.          | hybrid 3N       | Seedless | 92.85      | 8248.15          |
-| H6        | Meikole       | Artocarpus sp.          | hybrid 4N       | Seeded   | 87.41      | 15742.8          |
+| Accession | Cultivar      | Ploidy    | Seeds    |
+| --------- | ------------- | --------- | -------- |
+| HART001   | Maafala       | 2N        | Seedless |
+| HART050   | Kukumu_tasi   | 2N        | Seeded   |
+| HART069   | Ulu_Fiti      | 2N        | Seeded   |
+| HART030   | Huero         | 3N        | Seedless |
+| HART032   | Hamoa         | 3N        | Seedless |
+| HART033   | Patara        | 3N        | Seedless |
+| HART038   | Lemai         | 3N        | Seedless |
+| HART053   | Nahnmwal      | 3N        | Seedless |
+| ZZ3       | Ulu_hamoa     | hybrid_2N | Seeded   |
+| ZZ7       | Ulu_afa_elise | hybrid_2N | Seeded   |
+| ZZ9       | Ulu_afa       | hybrid_2N | Seeded   |
+| HART046   | Midolab       | hybrid_3N | Seedless |
+| HART049   | Meinpohnsakar | hybrid_3N | Seedless |
+| H6        | Meikole       | hybrid_4N | Seeded   |
 
 ---
 

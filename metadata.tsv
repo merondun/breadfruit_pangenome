@@ -1,0 +1,15 @@
+Accession	Cultivar	Ploidy	Seeds	HiFi Gb	Raw_HiFi
+HART001	Maafala	2N	Seedless	59.32	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/HART001.HiFi.fastq.gz
+HART050	Kukumu_tasi	2N	Seeded	38.96	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/HART050.HiFi.fastq.gz
+HART069	Ulu_Fiti	2N	Seeded	72.95	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/HART069.HiFi.fastq.gz
+HART030	Huero	3N	Seedless	96.64	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/HART030.HiFi.fastq.gz
+HART032	Hamoa	3N	Seedless	88.25	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/HART032.HiFi.fastq.gz
+HART033	Patara	3N	Seedless	139.76	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/HART033.HiFi.fastq.gz
+HART038	Lemai	3N	Seedless	42.63	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/HART038.HiFi.fastq.gz
+HART053	Nahnmwal	3N	Seedless	78.23	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/HART053.HiFi.fastq.gz
+ZZ3	Ulu_hamoa	hybrid_2N	Seeded	29.22	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/ZZ3.HiFi.fastq.gz
+ZZ7	Ulu_afa_elise	hybrid_2N	Seeded	28.6	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/ZZ7.HiFi.fastq.gz
+ZZ9	Ulu_afa	hybrid_2N	Seeded	30.02	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/ZZ9.HiFi.fastq.gz
+HART046	Midolab	hybrid_3N	Seedless	111.19	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/HART046.HiFi.fastq.gz
+HART049	Meinpohnsakar	hybrid_3N	Seedless	92.85	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/HART049.HiFi.fastq.gz
+H6	Meikole	hybrid_4N	Seeded	87.41	/project/coffea_pangenome/Artocarpus/Concatenated_Reads/H6.HiFi.fastq.gz
