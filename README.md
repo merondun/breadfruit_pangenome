@@ -22,14 +22,14 @@ The goal of this ~10 week project is to build and release a sequence-based pange
 
 The main deliverables are (i) one **pangenome graph per chromosome** (together forming a breadfruit pangenome reference), (ii) a **pangenome accumulation curve** showing how the total graph sequence covered grows as we add accessions (1...14; summed across chromosomes), and (iii) one hero-locus **tube map** highlighting a clear structural variant/alternative path in the graph.
 
-Please note that this outline is intended as a tentative roadmap and can be adjusted based on runtime constraints!
+Please note that this outline is intended as a tentative roadmap!
 
 ---
 
 # Background Info
 
 ## Breadfruit context
-We have a set of **14 breadfruit (Artocarpus altilis)** accessions with high-quality chromosome-level assemblies. Breadfruit has 28 chromosomes, and our assemblies are **collapsed haploid** (we are not tracking haplotypes for this project).
+We have a set of **14 breadfruit (Artocarpus altilis)** accessions with high-quality chromosome-level assemblies. Breadfruit has 28 chromosomes, and our assemblies are collapsed haploid (we don't care about haplotypes).
 
 To provide some ecological/evolutionary background, this [2023 paper](https://doi.org/10.1016/j.cub.2022.12.001) has a great overview of our current understanding of breadfruit genetic and geographic diversity.
 
@@ -42,16 +42,20 @@ A pangenome graph is a graph representation of multiple genomes that captures:
 - shared sequence as shared graph segments
 - structural variation and alternative sequence as branching paths
 
+A nice review of pangenome utility and development is [Kaur et al 2024](https://doi.org/10.1186/s12864-024-10931-w).
+
 ---
 
 # Tutorials & resources
 
 ## PGGB
-- PGGB official quick start: https://pggb.readthedocs.io/en/latest/rst/quick_start.html
-- PGGB GitHub repository: https://github.com/pangenome/pggb
-- Pangenomics workshop tutorial ("Reference-free graphs with pggb"): https://inbre.ncgr.org/pangenomics-workshop/reference-free-graphs-with-pggb.html
-- CPANG shorter tutorial maybe useful: https://gtpb.github.io/CPANG22/
-
+- [PGGB official quick start](https://pggb.readthedocs.io/en/latest/rst/quick_start.html). 
+- [PGGB GitHub](https://github.com/pangenome/pggb).
+- [Pangenomics workshop tutorial](https://inbre.ncgr.org/pangenomics-workshop/reference-free-graphs-with-pggb.html) ("Reference-free graphs with pggb").
+- [CPANG shorter tutorial](https://gtpb.github.io/CPANG22/) maybe useful.
+- [Panacus](https://github.com/codialab/panacus/tree/main) for pangenome statistics / growth curves. 
+- [SequenceTubeMap](https://github.com/vgteam/sequenceTubeMap) for visualization. 
+- [Bandage](https://rrwick.github.io/Bandage/) plots for graph visualization. 
 ---
 
 ## SciNet Overview
@@ -147,17 +151,24 @@ All per-chromosome FASTAs should be bgzipped and indexed:
 
 ---
 
-# Highest-priority goals (deliverables)
+# Highest-priority goals/deliverables
 
 1. **Per-chromosome pangenome graphs (Chr01–Chr28)** built with PGGB
 2. **QC summary tables** (graph sizes, path counts per chromosome)
 3. **Whole-genome pangenome accumulation curve**:
    - y-axis = bp encompassed (union bp of graph sequence traversed by the first k accessions' paths)
-   - x-axis = number of accessions (k = 1..14)
-   - mean ± interval across random accession orders (replicates)
+   - x-axis = number of accessions (k = 1..14) 
 4. **One hero-locus visualization**:
    - a subgraph chunk + tube map figure demonstrating alternative paths / SV
 5. Scripts/md notebook + software versions
+
+Example of (3) accumulation curve from [Kopalli et al 2025 Sup fig 2](https://doi.org/10.1093/gigascience/giaf121):
+
+![Kapalli et al](/imgs/growth_curve_kapalli.png)
+
+Example of (4) bandage & tube plot from [Hu et al 2026](https://doi.org/10.1016/j.isci.2026.115539):
+
+![Hu et al](/imgs/bandage_tube_hu.png)
 
 ---
 
