@@ -2,18 +2,13 @@
 
 ## Table of contents
 - [Background Info](#background-info)
-  - [Breadfruit context](#breadfruit-context)
-  - [What is the "pangenome graph" for this project?](#what-is-the-pangenome-graph-for-this-project)
 - [Tutorials & resources](#tutorials--resources)
-  - [PGGB](#pggb)
 - [SciNet Overview](#scinet-overview)
 - [Documentation & tools](#documentation--tools)
 - [People](#people)
 - [Metadata](#metadata)
 - [Inputs & naming conventions](#inputs--naming-conventions)
-  - [Assemblies](#assemblies)
-  - [Chromosome-by-chromosome input FASTAs](#chromosome-by-chromosome-input-fastas)
-- [Highest-priority goals (deliverables)](#highest-priority-goals-deliverables)
+- [Highest-priority goals/deliverables](#highest-priority-goals-deliverables)
 - [Tentative outline (10-week plan)](#tentative-outline-10-week-plan)
 
 ---
