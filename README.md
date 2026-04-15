@@ -171,14 +171,14 @@ Example of (4) bandage & tube plot from [Hu et al 2026](https://doi.org/10.1016/
 
 | Week | Overall objective | Suggested tools | Target outputs |
 |------|-------------------|-----------------|----------------|
-| 1 | Set up project directories on Ceres; confirm container/tooling; generate Chr01 multi-FASTA and run a **pilot PGGB build** | Apptainer, `pggb`, `samtools` | `Chr01` pilot graph; verified FASTA naming scheme |
-| 2 | Validate pilot graph (paths present, basic sanity); **tune PGGB parameters** if necessary; lock in final params | `pggb`, [odgi](https://github.com/pangenome/odgi) | Final parameter choice; "golden" Chr01 run with locked params; paths confirmed = 14 |
-| 3 | Generate all Chr01–Chr28 multi-FASTAs, **start full PGGB builds** | bash, `samtools` | `input/Chr01.fa.gz ... Chr28.fa.gz`, maybe some graphs |
-| 4 | **Run PGGB builds** for Chr01–Chr28; monitor failures/re-run | `pggb` | Majority of chromosome graphs completed; build status table. |
-| 5 | Finish all per-chromosome graphs; **create QC summary** (graph file sizes, graph bp, number of paths) | bash/Python/R; odgi utilities | `qc/graph_summary.tsv` (28 rows) + all final GFAs stored and named |
+| 1 | Familiarze on ceres; run a **pilot PGGB build** | Apptainer, `pggb` | `Chr01` pilot graph; verified FASTA naming scheme |
+| 2 | Validate pilot graph (paths present, basic sanity); **tune PGGB parameters** | `pggb`, [odgi](https://github.com/pangenome/odgi) | Final parameter choice; "golden" Chr01 run; confirm n=14 paths |
+| 3 | **Start full PGGB builds** | bash | some updates on graphs |
+| 4 | **Run PGGB builds** for Chr01–Chr28; monitor failures/re-run | `pggb` | Majority of chromosome graphs completed; build status table |
+| 5 | Finish all per-chromosome graphs; **create QC summary** (graph file sizes, graph bp, number of paths) | bash/Python/R; odgi utilities | summary stats table; all final GFAs archived |
 | 6 | **Finalize QC**, convert graphs to final odgi format; compute per-path and per-graph stats per chromosome | `odgi` | Tables for: (i) graph length per chr, (ii) per-path length per chr, (iii) path list per chr |
-| 7 | **Compute accumulation curve** from the final graphs: random accession orders, union-of-path bp per k, sum across chromosomes | Python/R, odgi-output tables | `qc/accumulation_long.tsv` with columns: replicate, k, bp_union |
-| 8 | Finalize accumulation curve; identify a "hero locus" region and plot tube map  | R/python, `odgi`/`vg`, [`sequenceTubeMap`](https://github.com/vgteam/sequenceTubeMap) | `fig_pangenome_accumulation.pdf`, `fig_hero_locus_tubemap.pdf` |
+| 7 | **Compute accumulation curve** from the final graphs: union-of-path bp per k, sum across chromosomes | odgi-output tables, [panacus](https://github.com/codialab/panacus) | figure or table for curves |
+| 8 | Finalize accumulation curve; identify a "hero locus" region and plot tube map  | R/python, `odgi`/`vg`, [`sequenceTubeMap`](https://github.com/vgteam/sequenceTubeMap) | accumulation curve and tube map figures  |
 | 9 | Edit, clean, and **finalize bioinformatic documentation, start writing methods/report.**  | Markdown/similar  | Organized git repo or md notebook |
 | 10 | **Finish final report**, focus on proper cited methods, short results & discussion | Markdown, word | Methods and figures! |
 
