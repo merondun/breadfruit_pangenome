@@ -135,7 +135,7 @@ The assemblies were generated from long read PacBio HiFi and HiC data for 14 bre
 We have 14 accessions with chromosome-scale assemblies (28 chromosomes). Assemblies are collapsed haploid assemblies (not haplotype-phased). 
 
 ## Chromosome-by-chromosome input FASTAs
-We will build one multi-FASTA per chromosome, containing **one record per accession**:
+You will be provided with one multi-FASTA per chromosome in `/project/coffea_pangenome/Breadfruit_Pangenome/01_assemblies`, containing **one record per accession**:
 
 - `input/chr01.fa.gz` contains 14 sequences:
   - `>HART001#Chr01`
@@ -145,7 +145,7 @@ We will build one multi-FASTA per chromosome, containing **one record per access
 
 This header style is important (following the [PanSN-spec](https://github.com/pangenome/PanSN-spec)) because it creates clear per-accession paths like `HART001#Chr01` in the graph.
 
-All per-chromosome FASTAs should be bgzipped and indexed:
+All per-chromosome FASTAs are already bgzipped and indexed:
 - `bgzip -c chr01.fa > chr01.fa.gz`
 - `samtools faidx chr01.fa.gz`
 
